@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>ESP8266 Sensor Configuration</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <script language="javascript" src="WebValidation.js"></script>
+   <link rel="StyleSheet" href="ESP8266.css" type="text/css" media="screen">
+</head>
+
+<body>
+   <center>
+
+   <hr>
+   <h2>Sensor Configuration</h2>
+   <h3><span name="sensor_name"></span></h3>
+   <hr>
+
+   <noscript>
+     This page uses JavaScript. Please enable it or upgrade your browser.
+   </noscript>
+
+   <form id="sensorconfig" action="SensorConfig.html" method="post">
+
+      <table border=      "0"
+             cellspacing= "0"
+             cellpadding= "3"
+             width=       "338px" >
+
+
+      <tr><td class="section" colspan="2"><br>Hardware characteristics<br><br></td></tr>
+
+      <tr><td class="form_label">Temp probe connected: </td>
+          <td class="form_value">
+
+          <input type= "radio"
+                 id=   "sensor_probe_Y"
+                 name= "sensor_probe"
+                 value="set_probe_Y"
+                 checked>
+          Yes
+
+          <input type= "radio"
+                 id=   "sensor_probe_N"
+                 name= "sensor_probe"
+                 value="set_probe_N">
+          No
+
+          </td>
+      </tr>
+
+
+      <tr><td class="form_label">Device relay connected: </td>
+          <td class="form_value">
+
+          <input type= "radio"
+                 id=   "sensor_relay_Y"
+                 name= "sensor_relay"
+                 value="set_relay_Y"
+                 checked>
+          Yes
+
+          <input type= "radio"
+                 id=   "sensor_relay_N"
+                 name= "sensor_relay"
+                 value="set_relay_N">
+          No
+
+          </td>
+      </tr>
+
+
+      <tr><td class="section" colspan="2"><br>Relay on/off setpoints<br><br></td></tr>
+
+
+      <tr><td class="form_label">LOW temperature setpoint: </td>
+          <td class="form_value">
+          <input type= "text"
+                 id=   "sensor_lowtemp"
+                 name= "sensor_lowtemp"
+                 size= "3"
+                 value="set_lowtemp">
+          </td>
+      </tr>
+
+      <tr><td class="form_label">HIGH temperature setpoint: </td>
+          <td class="form_value">
+          <input type= "text"
+                 id=   "sensor_hightemp"
+                 name= "sensor_hightemp"
+                 size= "3"
+                 value="set_hightemp">
+          </td>
+      </tr>
+
+
+      <tr><td class="section" colspan="2"><br>Software characteristics<br><br></td></tr>
+
+
+
+      <tr><td colspan="2" align="center">Descriptive label for the sensor:</td></tr>
+      <tr><td colspan="2" align="center">
+          <input type= "text"
+                 id=   "sensor_label"
+                 name= "sensor_label"
+                 size= "35"
+                 value="set_label"
+                 onblur="ValidateLabel(this);"
+                 placeholder="Enter sensor label">
+          </td>
+      </tr>
+
+      <tr><td class="form_label">Seconds between readings: </td>
+          <td class="form_value">
+          <input type= "text"
+                 id=   "sensor_interval"
+                 name= "sensor_interval"
+                 size= "5"
+                 value="set_interval">
+          </td>
+      </tr>
+
+      <tr><td class="form_label">Display degrees in F or C: </td>
+          <td class="form_value">
+
+          <input type= "radio"
+                 id=   "sensor_units_F"
+                 name= "sensor_units"
+                 value="set_units_F"
+                 checked>
+          &deg;F <br>
+
+          <input type= "radio"
+                 id=   "sensor_units_C"
+                 name= "sensor_units"
+                 value="set_units_C">
+          &deg;C
+          </td>
+      </tr>
+
+      <tr><td class="form_label">Debug output enabled: </td>
+          <td class="form_value">
+
+          <input type= "radio"
+                 id=   "sensor_debug_Y"
+                 name= "sensor_debug"
+                 value="set_debug_Y">
+          Yes
+
+          <input type= "radio"
+                 id=   "sensor_debug_N"
+                 name= "sensor_debug"
+                 value="set_debug_N">
+          No
+
+          </td>
+      </tr>
+
+
+      <tr><td colspan="2" align="center">
+
+          <input type=  "submit"
+                 id=    "save_button"
+                 class= "btn btn--m btn--blue"
+                 value= "Save">
+
+          <input type=  "reset"
+                 id=    "reset_button"
+                 class= "btn btn--m btn--blue"
+                 value= "Reset">
+
+          </td></tr>
+
+      </table>
+
+   </form>
+
+   <hr>
+   <script language="javascript" src="Footer.js"></script>
+
+   </center>
+
+</body>
+</html>

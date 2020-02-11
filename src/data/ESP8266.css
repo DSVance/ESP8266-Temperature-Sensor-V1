@@ -1,0 +1,153 @@
+/* -----------------------------------------------------------------------------
+ * -----------------------------------------------------------< ESP8266.css >---
+ * -----------------------------------------------------------------------------
+ *
+ * NAME:       ESP8266.css
+ *
+ * PURPOSE:    Defines the styles used on the ESP8266 temperature sensor site.
+ *
+ * LANGUAGE:   CSS - Cascading Style Sheet
+ *
+ * NOTES:
+ *
+ * HISTORY:
+ * --------- ----------- - -----------------------------------------------------
+ * 12Nov2018 Scott Vance - Initial development
+ *
+ * -----------------------------------------------------------------------------
+ */
+
+body
+{
+   background:       #FFF8DC;       /* cornsilk */
+   color:            #008080;       /* teal     */
+   font-family:      avenir, helvetica, arial, sans-serif;
+   letter-spacing:   0.05em;
+   min-width:        20em;
+
+}
+
+
+.section
+{
+   text-align:       center;
+   text-decoration:  underline;
+   font-weight:      bold;
+   letter-spacing:   0.15em;
+}
+
+
+.form_label
+{
+   text-align:       right;
+}
+
+
+.form_value
+{
+   text-align:       left;
+}
+
+
+dt
+{
+   font-weight:      bold;
+}
+
+
+.hidden 
+{
+   display:          none;
+}
+
+
+hr
+{
+   background-color: #008080;       /* teal     */
+   color:            #7CFC00;       /* lawngreen */
+   border:           1 none;
+   height:           2px;
+   width:            95%;
+   min-width:        20em;
+}
+
+
+.btn, .btn:link, .btn:visited
+{
+   border-radius:    0.5em;
+   border-style:     solid;
+   border-width:     1px;
+   border-color:     #008080;       /* teal     */
+   background:       #AFEEEE;       /* paleturquoise */
+   color:            #008080;       /* teal     #111; */
+   display:          inline-block;
+   font-family:      avenir, helvetica, arial, sans-serif;
+   letter-spacing:   0.05em;
+   width:            130px;
+   margin-top:       2.0em;
+   margin-bottom:    0.5em;
+   padding:          1.0em 0.75em;
+   text-decoration:  none;
+   transition:       color 0.3s, background-color 0.3s, border 0.3s;
+}
+
+
+.btn:hover, .btn:focus
+{
+   color:            #7FDBFF;
+   border: 1px solid #7FDBFF;
+   transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+
+.btn:active
+{
+   color:            #0074D9;
+   border: 1px solid #0074D9;
+   transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+
+.btn--m
+{
+   font-size: 14px;
+}
+
+
+.btn--blue:link, .btn--blue:visited
+{
+   color:            #fff;
+   background-color: #0074D9;
+}
+
+
+.btn--blue:hover, .btn--blue:focus
+{
+   color:            #fff !important;
+   background-color: #0063aa;
+   border-color:     #0063aa;
+}
+
+
+.btn--blue:active
+{
+   color:            #fff;
+   background-color: #001F3F;
+   border-color:     #001F3F;
+}
+
+
+.footnote
+{
+   font-size:  7pt;
+   font-style: italic;
+   text-align: center
+}
+
+
+.savedate
+{
+   font-size:  7pt;
+   font-style: italic;
+   text-align: center
+}
