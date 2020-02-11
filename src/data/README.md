@@ -4,4 +4,9 @@ The ESP8266 micro controller that hosts the temperature sensor system also runs 
 
 The initial web page for the web interface looks like this
 
-![Home](images/Home.png)
+<img src="images/Home.png" alt="Home" width="300"/>
+
+
+The current temperature display page looks like this
+
+<img src="images/Data.png" alt="Home" width="300"/>
