@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Send a file to ESP8266</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="StyleSheet" href="ESP8266.css" type="text/css" media="screen">
+</head>
+
+<body>
+
+   <center>
+
+   <hr>
+   <h2>Send File to Server</h2>
+   <h3><span name="sensor_name"></span></h3>
+   <hr>
+
+   <br>
+ 
+   <p style="width: 85%; text-align: left;">
+   To upload a file to the server, use the "Browse" to open a file selection 
+   dialog and choose the file to be uploaded.  Once a file is selected, use
+   the "Upload" button to start the file upload process.
+   </p>
+
+   <form method="post" enctype="multipart/form-data">
+
+      <br>
+      <label for="Browse_button"> Select a file to upload: </label>
+      <br>
+    
+      <input type="file" name="name">
+      
+      <br><br>
+      
+      <input type=  "submit" 
+             id=    "upload_button"
+             class= "btn btn--m btn--blue" 
+             value= "Upload">
+   </form>
+   
+   <br>
+
+   <hr>
+
+   <script language="javascript" src="Footer.js"></script>
+   
+   </center>
+
+</body>
+
+</html>

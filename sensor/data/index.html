@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>ESP8266 Home</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <script language="javascript">
+
+   function RestartSystem()
+   {
+      var Status;
+      
+      Status = confirm ( "You are about to restart the sensor system.\n"
+                       + "Do you want to continue?" 
+                       );
+
+      if ( Status == true )
+      {
+         document.forms["Restart"].submit();
+      }
+
+      return Status;
+   }
+      
+   </script>
+   <link rel="StyleSheet" href="ESP8266.css" type="text/css" media="screen">
+</head>
+
+<body>
+
+   <center>
+
+   <hr>
+   <h2>Home</h2>
+   <h3><span name="sensor_name"></span></h3>
+   <hr>
+
+   <noscript>
+     This page uses JavaScript. Please enable it or upgrade your browser.
+   </noscript>
+
+   <table border="0" cellspacing="0" cellpadding="3" style="width:90%" >
+
+   <tr><td>
+      <dl>
+         <dt>Temperature</dt>
+         <dd>
+            See the <a href="SensorData.html">sensor data</a> page for display of the
+            current temperature value reported by the temperature sensor. <br><br>
+         </dd>
+
+         <dt>Sensor Configuration</dt>
+         <dd>
+            See the sensor <a href="SensorConfig.html">configuration page</a> to define
+            the characteristics and operating parameters for the sensor hardware. <br><br>
+
+         <dt>Wifi Configuration</dt>
+         <dd>
+            See the wifi network <a href="WifiConfig.html">configuration page</a> 
+            to define the values for establishing a wifi connection. <br><br>
+         </dd>
+
+         <dt>Upload File</dt>
+         <dd>
+            See the file <a href="UploadFile.html">upload page</a> to upload
+            a file to the web server. <br><br>
+         </dd>
+      </dl>
+
+   </td></tr>
+
+   </table>
+
+   <br>
+   
+   <b>To reboot the processor and restart the system ...</b>
+   <form id="Restart" action="RESTART" method="post">
+      <input type=  "button"
+             id=    "restart_button"
+             class= "btn btn--m btn--blue"
+             value= "Restart" 
+             onclick="RestartSystem ( this )" >      
+   </form>
+
+   <br>
+
+   <hr>
+   <script language="javascript" src="Footer.js"></script>
+
+   </center>
+
+</body>
+
+</html>
